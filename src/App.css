@@ -53,3 +53,30 @@ h3 {
   line-height: 28px;
   padding: 1px 40px;
 }
+
+.Social__icon {
+  transition: background-color 0.3s, color 0.3s;
+  width: 30px;
+  height: 30px;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--white);
+}
+
+.Social__icon:hover {
+  background: var(--green);
+  color: var(--black);
+}
+
+/* .SVG {
+  transition: fill 0.3s;
+  width: 100%;
+  fill: var(--white);
+} */
+
+/* .Social__icon:hover SVG {
+  fill: var(--black);
+} */
