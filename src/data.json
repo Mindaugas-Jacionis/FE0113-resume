@@ -1,0 +1,176 @@
+{
+  "en": {
+    "header": {
+      "title": "Programmer"
+    },
+    "links": {
+      "title": "Links"
+    },
+    "about": {
+      "title": "About Me",
+      "content": "English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam."
+    },
+    "education": {
+      "title": "Education",
+      "shcools": [
+        { "name": "Hogwartz", "from": 2016, "to": 2020, "degree": "BA in Applied Witchcraft" },
+        { "name": "Code Academy", "from": 2016, "to": 2020, "degree": "Certified FrontEnd Dev" }
+      ]
+    },
+    "personalSkills": {
+      "title": "Personal Skills",
+      "skills": [
+        {
+          "name": "Communication",
+          "level": "advanced"
+        },
+        {
+          "name": "Teamwork",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Organization",
+          "level": "Beginner"
+        }
+      ]
+    },
+    "techSkills": {
+      "title": "Technical Skills"
+    },
+    "workExperience": {
+      "title": "Work Experience",
+      "jobs": [
+        {
+          "company": "Tesonet",
+          "from": 2017,
+          "to": "present",
+          "position": "Lead FrontEnd Dev",
+          "info": "English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero.",
+          "achievements": ["did projec", "did another project", "stil of sane mind"]
+        },
+        {
+          "company": "Tesonet",
+          "from": 2017,
+          "to": "present",
+          "position": "Lead FrontEnd Dev",
+          "info": "English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero.",
+          "achievements": ["did projec", "did another project", "stil of sane mind"]
+        },
+        {
+          "company": "Tesonet",
+          "from": 2017,
+          "to": "present",
+          "position": "Lead FrontEnd Dev",
+          "info": "English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero.",
+          "achievements": ["did projec", "did another project", "stil of sane mind"]
+        }
+      ]
+    },
+    "footer": [
+      {
+        "title": "Address",
+        "info": "Some St. 52 - 13, Narnia"
+      },
+      {
+        "title": "Contact",
+        "info": "Some St. 52 - 13, Narnia"
+      },
+      {
+        "title": "Social",
+        "info": "Some St. 52 - 13, Narnia"
+      }
+    ]
+  },
+  "lt": {
+    "header": {
+      "title": "Programuotojas"
+    },
+    "links": {
+      "title": "Nuorodos"
+    },
+    "about": {
+      "title": "Apie Mane",
+      "content": "Lietuviškai: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam."
+    },
+    "education": {
+      "title": "Išsilavinimas",
+      "shcools": [
+        {
+          "name": "Hogwartz",
+          "from": 2016,
+          "to": 2020,
+          "degree": "Taikomosios Magijos Bakalauras"
+        },
+        {
+          "name": "Code Academy",
+          "from": 2016,
+          "to": 2020,
+          "degree": "Sertifikuotas Vartotojo Sąsajų Programuotojas"
+        }
+      ]
+    },
+    "personalSkills": {
+      "title": "Asmeninės Savybės",
+      "skills": [
+        {
+          "name": "Komunikacija",
+          "level": "advanced"
+        },
+        {
+          "name": "Komandinis Darbas",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Organizavimas",
+          "level": "Beginner"
+        }
+      ]
+    },
+    "techSkills": {
+      "title": "Technologinės Kompetencijos"
+    },
+    "workExperience": {
+      "title": "Darbo Patirtis",
+      "jobs": [
+        {
+          "company": "Tesonet",
+          "from": 2017,
+          "to": "present",
+          "position": "Lead FrontEnd Dev",
+          "info": "English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero.",
+          "achievements": ["did projec", "did another project", "stil of sane mind"]
+        },
+        {
+          "company": "Tesonet",
+          "from": 2017,
+          "to": "present",
+          "position": "Lead FrontEnd Dev",
+          "info": "English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero.",
+          "achievements": ["did projec", "did another project", "stil of sane mind"]
+        },
+        {
+          "company": "Tesonet",
+          "from": 2017,
+          "to": "present",
+          "position": "Lead FrontEnd Dev",
+          "info": "English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero.",
+          "achievements": ["did projec", "did another project", "stil of sane mind"]
+        }
+      ]
+    },
+    "footer": [
+      {
+        "title": "Adresas",
+        "info": "Some St. 52 - 13, Narnia"
+      },
+      {
+        "title": "Kontaktai",
+        "info": "Some St. 52 - 13, Narnia"
+      },
+      {
+        "title": "Socialiniai",
+        "info": "Some St. 52 - 13, Narnia"
+      }
+    ]
+  }
+}
