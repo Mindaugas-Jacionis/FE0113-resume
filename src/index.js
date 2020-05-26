@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import ErrorBoundary from "./components/ErrorBoundary";
 import * as serviceWorker from "./serviceWorker";
 
 function P({ children }) {
@@ -38,20 +39,35 @@ class CounterV1 extends React.Component {
   }
 }
 
-function CounterV2(props) {
-  const [count, setCount] = useState(props.count);
-  const [text, setText] = useState("Hello");
-  const [moreText, setMoreText] = useState("more");
-
+function CounterV2({ count, setCount }) {
   return (
     <div>
       <p>{count}</p>
-      <p>{text}</p>
-      {count >= 5 && <p>{moreText}</p>}
-      <input onChange={(event) => setText(text + event.target.value)} />
       <button type="button" onClick={() => setCount(count + 1)}>
         Add
       </button>
+    </div>
+  );
+}
+
+function WholeApp() {
+  const [count, setCount] = useState(9);
+
+  return (
+    <div style={{ padding: "40px" }}>
+      <CounterV1 count={5} />
+      <hr />
+      <CounterV2 setCount={setCount} count={count} />
+      <hr />
+      <ErrorBoundary
+        component={() => (
+          <div>
+            <p>Whole App Crashed! 🙀</p>
+          </div>
+        )}
+      >
+        <App count={count} />
+      </ErrorBoundary>
     </div>
   );
 }
@@ -60,13 +76,7 @@ ReactDOM.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>,
-  <React.Fragment>
-    <CounterV1 count={5} />
-    <hr />
-    <CounterV2 count={9} />
-    <hr />
-    <App />
-  </React.Fragment>,
+  <WholeApp />,
   document.getElementById("root")
 );
 
