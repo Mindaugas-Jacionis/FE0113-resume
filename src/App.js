@@ -10,13 +10,29 @@ import data from "./data.json";
 class Timer extends React.Component {
   intervalId = null;
   state = {
-    time: 60,
+    time: 10,
+    obj: {
+      timeInObj: 10,
+      finish: false,
+    },
   };
 
   componentDidMount() {
     this.intervalId = setInterval(() => {
       console.log("update time");
-      this.setState({ time: this.state.time - 1 });
+      this.setState(
+        {
+          time: this.state.time - 1,
+          obj: { ...this.state.obj, finish: this.state.time - 1 < 1 },
+        },
+        () => {
+          console.log(this.state);
+
+          // if (this.state.time === 0) {
+          //   window.location.assign("https://wikipedia.com");
+          // }
+        }
+      );
     }, 1000);
   }
 
@@ -25,10 +41,14 @@ class Timer extends React.Component {
   }
 
   render() {
-    throw new Error("Priverstine klaida");
+    // throw new Error("Priverstine klaida");
 
     return <div>{this.state.time}</div>;
   }
+}
+
+function ErrorMessage() {
+  return <p>Ohhh nouzzz! 🙀</p>;
 }
 
 class App extends React.Component {
@@ -103,7 +123,7 @@ class App extends React.Component {
 
   componentDidUpdate(prevProps, prevState, dataFromSnapshot) {
     if (dataFromSnapshot) {
-      alert("there is new messages");
+      // alert("there is new messages");
     }
 
     console.log("componentDidUpdate", { prevProps, prevState, dataFromSnapshot });
@@ -136,7 +156,13 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <ErrorBoundary component={() => null}>{count < 10 && <Timer />}</ErrorBoundary>
+        <ErrorBoundary
+          component={function () {
+            return null;
+          }}
+        >
+          {count < 10 && <Timer />}
+        </ErrorBoundary>
         <header className="Header">
           <input type="text" placeholder="Randoms" />
           <SelectLanguage onChange={this.onChange} />

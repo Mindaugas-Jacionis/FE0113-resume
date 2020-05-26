@@ -5,7 +5,7 @@ import "./index.css";
 import Title from "../Title";
 import Separator from "../Separator";
 
-function ContentBlock({ children, title, className, isLight }) {
+function ContentBlock({ children, className, title }) {
   const classes = classnames("ContentBlock", className);
 
   return (

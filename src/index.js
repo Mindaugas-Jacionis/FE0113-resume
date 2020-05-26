@@ -23,6 +23,10 @@ class CounterV1 extends React.Component {
     text: "",
   };
 
+  onClick = () => {
+    this.setState((state) => ({ count: state.count + 1 }));
+  };
+
   render() {
     const { count, text } = this.state;
 
@@ -31,7 +35,7 @@ class CounterV1 extends React.Component {
         <P>{count}</P>
         <p>Text is: {text}</p>
         <input onChange={(event) => this.setState({ text: event.target.value })} />
-        <button disabled={!text} type="button" onClick={() => this.setState({ count: count + 1 })}>
+        <button type="button" onClick={this.onClick}>
           Add
         </button>
       </div>
@@ -50,11 +54,18 @@ function CounterV2({ count, setCount }) {
   );
 }
 
+function Link(props) {
+  return <a {...props}>{props.children}</a>;
+}
+
 function WholeApp() {
   const [count, setCount] = useState(9);
 
   return (
     <div style={{ padding: "40px" }}>
+      <Link href="https://wikipedia.com" target="_blank" whatever="bla bla">
+        Awesome link
+      </Link>
       <CounterV1 count={5} />
       <hr />
       <CounterV2 setCount={setCount} count={count} />
